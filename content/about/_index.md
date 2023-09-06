@@ -50,13 +50,9 @@ academia:
         other_info: 'graduated with top 1% GPA with National Scholarship'
 ---
 
-Hi! I'm Effy, you can also call me 李雪 [lǐ xuě]. I am a PhD student at University of Amsterdam in [INDE lab][1], supervised by [Prof. Paul Groth][2] and [Dr. Jan-Christoph Kalo][3]. Previously I was an AI resident at Microsoft Research Cambridge, UK. Before that I did my Masters' in Univeristy of Edinburgh.
+Hi! I'm Effy, you can also call me 李雪 [lǐ xuě]. I am a PhD student at University of Amsterdam in [INDE lab](https://indelab.org/), supervised by [Prof. Paul Groth](pgroth.com) and [Dr. Jan-Christoph Kalo](https://scholar.google.de/citations?user=2EE-YUsAAAAJ&hl=de). Previously I was an AI resident at Microsoft Research Cambridge, UK. Before that I did my Masters' in Univeristy of Edinburgh.
 
 I work on Knowlege Graph Construction from Conversational Data. Specifically, I look into how can we better utilizing (large) language models to extract information such as entities and relations, and furthermore, making (large) language models more data-efficient, robust and adaptable. My PhD research is funded and situated in a NWO project [*IN-SIGHT.it*](https://in-sight.it/). 
 
 I am originally from China and have lived in the UK and the Netherlands. When I am not in front of my laptop, you can often find me bouldering (in completely beginner level), cycling or drinking coffee (like everyone else :D). If you are keen to collaborate or exchange ideas over a cofee, you can reach out to me at <span style="color:blue">x DOT li3 AT uva DOT nl</span>.
 
-
-[1]: inde.org
-[2]: pgroth.com
-[3]: https://scholar.google.de/citations?user=2EE-YUsAAAAJ&hl=de

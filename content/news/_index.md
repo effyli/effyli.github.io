@@ -27,5 +27,6 @@ news_items:
 - text: "A preprint titled *'How different is different? Systematically identifying
 distribution shifts and their impacts in NER datasets'* now is out [here](https://assets.researchsquare.com/files/rs-2660855/v1/db552d0bf82020e0cd37df1f.pdf?c=1678751250)"
   extra_text: "March 2023."
+  icon: "file-text"
   date: 2023-03-13
 ---
