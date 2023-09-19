@@ -1,15 +1,13 @@
 ---
-title: "Your Paper Name Goes Here"
+title: "Knowledge-centric Prompt Composition for Knowledge Base Construction from Pre-trained Language Models"
 authors:
-- Your Full Name
+- Xue Li
 - Author Name
-date: "2016-09-01"
+date: "2023-09-19"
 
-publication: "Journal of Machine Learning"
+publication: "ISWC 2023 LM-KBC workshop"
 
 links:
-    pdf: https://github.com/hadisinaee/avicenna
-    code: https://github.com/hadisinaee/avicenna
-    slides: https://github.com/hadisinaee/avicenna
-    video: https://github.com/hadisinaee/avicenna
+    pdf: challenge.pdf
+    code: https://github.com/effyli/lm-kbc
 ---

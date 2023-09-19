@@ -6,7 +6,7 @@ weight: 3
 
 content_type: 'publications'
 section_settings:
-    show_section: false
+    show_section: True
     title: 'Recent Publications'
 ---
 

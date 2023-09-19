@@ -1,15 +1,15 @@
 ---
-title: "The challenges of cross-document coreference resolution for email"
+title: "Do Instruction-tuned Large Language Models Help with Relation Extraction?"
 authors:
 - Xue Li
-- Sara Magliacane
+- Fina Polat
 - Paul Groth
-date: "2021-12-02"
+date: "2023-09-19"
 
-publication: "Proceedings of the 11th Knowledge Capture Conference"
+publication: "ISWC 2023 LM-KBC workshop"
 
 links:
-    pdf: https://dl.acm.org/doi/abs/10.1145/3460210.3493573
+    pdf: llmre.pdf
 
 ---
 

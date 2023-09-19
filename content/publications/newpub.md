@@ -1,19 +1,15 @@
 ---
-title: "Your Paper Name Goes Here"
+title: "The Challenges of Cross-Document Coreference Resolution for Email"
 authors:
-- Your Full Name
-- Another Researcher
-date: "2018-09-01"
+- Xue Li
+- Sara Magliacane
+- Paul Groth
+date: "2021-12-02"
 
-publication: "Journal of Machine Learning"
+publication: "Proceedings of the 11th Knowledge Capture Conference"
 
 links:
-    pdf: https://github.com/hadisinaee/avicenna
-    code: https://github.com/hadisinaee/avicenna
-    slides: https://github.com/hadisinaee/avicenna
-    video: https://github.com/hadisinaee/avicenna
+    pdf: https://dl.acm.org/doi/abs/10.1145/3460210.3493573
 
 ---
 
-
-[See the wiki page for tutorial!](https://github.com/hadisinaee/avicenna/wiki)
