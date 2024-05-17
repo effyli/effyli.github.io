@@ -11,6 +11,9 @@ default_news_icon: "file-text"
 num_news: 5
 
 news_items:
+- text: "Our paper titled *'Towards Efficient Data Wrangling with LLMs using Code Generation'* got accepted to [DEEM@SIGMOD'24](https://deem-workshop.github.io/)! I will be in Chile to present our work."
+  extra_text: "May 2024."
+  date: 2024-05-17
 - text: "Our paper titled *'Do Instruction-tuned Large Language Models Help with Relation Extraction?'* got accepted to [ISWC LM-KBC workshop](https://lm-kbc.github.io/workshop2023/)!"
   extra_text: "August 2023."
   date: 2023-08-31
