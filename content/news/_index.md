@@ -11,6 +11,12 @@ default_news_icon: "file-text"
 num_news: 5
 
 news_items:
+- text: "I was at VLDB'24, Guangzhou China. Here is my [trip report](blog/blog_vldb)"
+  extra_text: "August 2024."
+  date: 2024-08-05
+- text: "Our paper titled *'How different is different? Systematically identifying distribution shifts and their impacts in NER datasets'* got accepted to [Language Resources and Evaluation (LREC)](https://link.springer.com/article/10.1007/s10579-024-09754-8)!"
+  extra_text: "July 2024."
+  date: 2024-07-18
 - text: "Our paper titled *'Towards Efficient Data Wrangling with LLMs using Code Generation'* got accepted to [DEEM@SIGMOD'24](https://deem-workshop.github.io/)! I will be in Chile to present our work."
   extra_text: "May 2024."
   date: 2024-05-17

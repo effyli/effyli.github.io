@@ -10,4 +10,5 @@ publication: "DEEM@SIGMOD'24"
 links:
     pdf: waddle_code.pdf
     code: https://github.com/effyli/efficient_llm_data_wrangling
+    poster: waddle_code_poster.pdf
 ---

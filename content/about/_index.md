@@ -8,7 +8,7 @@ full_name: "Effy Xue Li"
 profile_picture: "Effy-photo.png"
 cv: "cv.pdf"
 # set to false if you don't want to show your blog
-blog: false
+blog: true
 
 socials:
     twitter: "effyli4"
@@ -24,12 +24,8 @@ interests:
 
 affiliations:
     - affiliation:
-        title: "Ph.D. candidate"
+        title: "Last-year Ph.D. candidate"
         name: "University of Amsterdam"
-    - affiliation:
-        title: "Research Intern"
-        name: "MotherDuck"
-        
    
 
 academia:
@@ -54,8 +50,9 @@ academia:
         other_info: 'graduated with top 1% GPA with National Scholarship'
 ---
 
-Hi! I'm Effy, you can also call me 李雪 [lǐ xuě]. I am currently doing an research internship @ [MotherDuck](motherduck.com).
-I am also a PhD student at University of Amsterdam in [INDE lab](https://indelab.org/), supervised by [Prof. Paul Groth](pgroth.com) and [Dr. Jan-Christoph Kalo](https://scholar.google.de/citations?user=2EE-YUsAAAAJ&hl=de). Previously I was an AI resident at Microsoft Research Cambridge, UK. Before that I did my Masters' in Univeristy of Edinburgh.
+Hi! I'm Effy, you can also call me 李雪 [lǐ xuě]. 
+I am currently a PhD student at University of Amsterdam in [INDE lab](https://indelab.org/), supervised by [Prof. Paul Groth](pgroth.com) and [Dr. Jan-Christoph Kalo](https://scholar.google.de/citations?user=2EE-YUsAAAAJ&hl=de). I recently did an internship at [MotherDuck](https://motherduck.com/) on LLMs for Data Management.
+Previously I was an AI resident at Microsoft Research Cambridge, UK. Before that I did my Masters' in Univeristy of Edinburgh.
 
 My PhD topic on Knowlege Graph Construction from Conversational Data. Specifically, I look into how can we better utilizing (large) language models to extract information such as entities and relations, and furthermore, making (large) language models more data-efficient, robust and adaptable. I am also interested in efficiently using LLMs for Data Management. My PhD research is funded and situated in a NWO project [*IN-SIGHT.it*](https://in-sight.it/). 
 

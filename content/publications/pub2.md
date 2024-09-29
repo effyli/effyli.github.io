@@ -10,4 +10,5 @@ publication: "ISWC 2023 LM-KBC workshop"
 links:
     pdf: challenge.pdf
     code: https://github.com/effyli/lm-kbc
+    poster: lm-kbc-poster.pdf
 ---
