@@ -61,7 +61,7 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Debug public folder
         run: ls -la ./public
-            - name: Check for symlinks
+      - name: Check for symlinks
         run: find ./public -type l
       - name: Remove symlinks
         run: find ./public -type l -exec rm -v {} \;
