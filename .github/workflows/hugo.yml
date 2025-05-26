@@ -61,6 +61,12 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Debug public folder
         run: ls -la ./public
+            - name: Check for symlinks
+        run: find ./public -type l
+      - name: Remove symlinks
+        run: find ./public -type l -exec rm -v {} \;
+      - name: Check site size
+        run: du -sh ./public
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
