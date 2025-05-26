@@ -11,6 +11,15 @@ default_news_icon: "file-text"
 num_news: 5
 
 news_items:
+- text: "I was at Dagstuhl seminar on [Challenges and Opportunities of Table Representation Learning](https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/25182), and I gave a talk on *Context Matters in TRL*."
+  extra_text: "April 2025."
+  date: 2025-04-27
+- text: "I gave my first keynote talk on *Efficient Use of LLMs for Data Preparation*, at [ELLIS workshop on Representation Learning and Generative Models for Structured Data](https://sites.google.com/view/rl-and-gm-for-sd)"
+  extra_text: "Feb 2025."
+  date: 2025-02-27
+- text: "I was at CIDR'25, Amsterdam as a volunteer"
+  extra_text: "January 2025."
+  date: 2025-01-22
 - text: "I was at VLDB'24, Guangzhou China. Here is my [trip report](blog/blog_vldb)"
   extra_text: "August 2024."
   date: 2024-08-05
