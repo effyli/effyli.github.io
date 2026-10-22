@@ -1,0 +1,123 @@
+{{ define "main" }}
+{{ $about := site.GetPage "/about" }}
+{{ $news := site.GetPage "/news" }}
+{{ $p := $about.Params }}
+
+<section class="hero">
+  <div class="hero-text">
+    <p class="kicker">~/about</p>
+    <h1 class="title">{{ $p.full_name }}<span class="dot">.</span></h1>
+    <p class="lead">{{ $p.position }} at {{ $p.institution }}.<br>
+      Working on <em>{{ delimit $p.interests ", " " and " }}</em>.</p>
+    <div class="buttons">
+      <a class="button" href="{{ site.Params.cv | relURL }}">cv</a>
+      {{ range site.Params.socials }}<a class="button" href="{{ .url }}" rel="me">{{ .name }}</a>{{ end }}
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="{{ $p.profile_picture | relURL }}" alt="Portrait of {{ $p.full_name }}">
+  </div>
+</section>
+
+<section class="news" aria-labelledby="news-title">
+  {{ $items := sort $news.Params.news_items "date" "desc" }}
+  {{ $n := $news.Params.num_news | default 5 }}
+  <header class="news-head">
+    <h2 id="news-title">Latest news</h2>
+    {{ with index $items 0 }}<span>updated {{ .date | time.Format "Jan 2006" }}</span>{{ end }}
+  </header>
+  <ul class="news-list">
+    {{ range $i, $item := first $n $items }}{{ partial "news-item.html" (dict "item" $item "latest" (eq $i 0)) }}{{ end }}
+  </ul>
+  {{ if gt (len $items) $n }}
+  <details class="more">
+    <summary>show older news ({{ sub (len $items) $n }})</summary>
+    <ul class="news-list">
+      {{ range after $n $items }}{{ partial "news-item.html" (dict "item" . "latest" false) }}{{ end }}
+    </ul>
+  </details>
+  {{ end }}
+</section>
+
+<div class="sections">
+
+  <div class="label"><span class="num">01</span><span class="slash"> / </span>Background</div>
+  <div class="content prose">{{ $about.Content }}</div>
+
+  <div class="label"><span class="num">02</span><span class="slash"> / </span>Interests</div>
+  <div class="content">
+    <ul class="chips">{{ range $p.interests }}<li>{{ . }}</li>{{ end }}</ul>
+  </div>
+
+  <div class="label"><span class="num">03</span><span class="slash"> / </span>Academia</div>
+  <div class="content">
+    <ul class="rows">
+      {{ range $p.academia }}
+      <li>
+        <span class="when">{{ .start_date }}{{ with .end_date }}–{{ . }}{{ end }}</span>
+        <span class="what"><strong>{{ .title }}</strong><br><span class="where">{{ .institution }}</span>{{ with .detail }}<br><span class="muted">{{ . }}</span>{{ end }}</span>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="label"><span class="num">04</span><span class="slash"> / </span>Industry</div>
+  <div class="content">
+    <ul class="rows">
+      {{ range $p.industry }}
+      <li>
+        <span class="when">{{ .start_date }}{{ with .end_date }}–{{ . }}{{ end }}</span>
+        <span class="what"><strong>{{ .title }}</strong><br><span class="where">{{ .institution }}</span>{{ with .detail }}<br><span class="muted">{{ . }}</span>{{ end }}</span>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="label"><span class="num">05</span><span class="slash"> / </span>Publications</div>
+  <div class="content">
+    <ul class="rows">
+      {{ range (site.GetPage "/publications").Pages.ByDate.Reverse }}
+      <li>
+        <span class="when">{{ .Date.Format "2006" }}</span>
+        <span class="what">
+          <strong>{{ .Title }}</strong><br>
+          <span class="authors">{{ range $i, $a := .Params.authors }}{{ if $i }}, {{ end }}{{ if in (slice "Xue Li" "Effy Xue Li") $a }}<span class="me">{{ $a }}</span>{{ else }}{{ $a }}{{ end }}{{ end }}</span><br>
+          <em class="where">{{ .Params.publication }}</em>
+          {{ partial "links.html" .Params.links }}
+        </span>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="label"><span class="num">06</span><span class="slash"> / </span>Service</div>
+  <div class="content">
+    <ul class="rows">
+      {{ range $p.service }}
+      <li>
+        <span class="when">{{ .year }}</span>
+        <span class="what"><strong>{{ .role }}</strong>, {{ if .url }}<a href="{{ .url }}">{{ .event }}</a>{{ else }}{{ .event }}{{ end }}</span>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+
+  <div class="label"><span class="num">07</span><span class="slash"> / </span>Teaching</div>
+  <div class="content">
+    <ul class="rows">
+      {{ range (site.GetPage "/teaching").Pages.ByDate.Reverse }}
+      <li>
+        <span class="when">{{ .Params.period }}</span>
+        <span class="what">
+          <strong>{{ .Title }}</strong>{{ with .Params.institution }}, {{ . }}{{ end }}
+          {{ with .Params.student }}<br>Student: {{ . }}{{ end }}
+          {{ with .Params.thesis }}<br><em class="muted">{{ . }}</em>{{ end }}
+          {{ partial "links.html" .Params.links }}
+        </span>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+
+</div>
+{{ end }}

@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1 class="title">{{ .Title }}</h1>
+{{ with .Description }}<p class="lead">{{ . | markdownify }}</p>{{ end }}
+<div class="projects">
+  {{ range .Pages.ByDate.Reverse }}
+  {{ $url := .Params.link }}
+  <article class="project">
+    <a class="project-cover" href="{{ $url }}"{{ with .Params.color }} style="background-color: {{ . | safeCSS }}"{{ end }}>
+      {{ with .Params.cover }}<img src="{{ . | relURL }}" alt="{{ $.Title }}" loading="lazy">
+      {{ else }}<span class="cover-text">{{ .Params.cover_text }}</span>{{ end }}
+    </a>
+    <h2 class="project-title"><a href="{{ $url }}">{{ .Title }}</a></h2>
+    <p class="project-intro">{{ .Params.intro }}</p>
+    <p class="project-meta">{{ .Date.Format "2006" }} · {{ .Params.venue }} {{ partial "links.html" .Params.links }}</p>
+  </article>
+  {{ end }}
+</div>
+{{ end }}

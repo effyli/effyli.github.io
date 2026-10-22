@@ -2,19 +2,34 @@
 title: "news"
 date: 2020-11-20T17:51:47+03:30
 draft: false
-headless: true
+# rendered on the home page only
+build:
+  render: never
+  list: never
 
 # all icons by [feathericons.com](https://https://feathericons.com//) are supported
 show_news_icons: true
 default_news_icon: "file-text"
 
-num_news: 5
+num_news: 3
 
 news_items:
-- text: "I was at Dagstuhl seminar on [Challenges and Opportunities of Table Representation Learning](https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/25182), and I gave a talk on *Context Matters in TRL*."
+- text: "I gave a talk on *The Silent Failures in Agentic Data Science* at the [SODA team](https://team.inria.fr/soda/), Inria Saclay."
+  extra_text: "October 2026."
+  date: 2026-10-20
+- text: "New **preprint**: [*The Silent Failures in Agentic Data Science*](https://arxiv.org/abs/2610.14115). Data science agents often look good on accuracy while hiding failures such as data leakage."
+  extra_text: "October 2026."
+  date: 2026-10-09
+- text: "New **preprint**: [*Beyond Scale and Generation: Understanding Language Model-based Entity Matching*](https://arxiv.org/abs/2607.24688)."
+  extra_text: "July 2026."
+  date: 2026-07-27
+- text: "I co-organized the [**AI for Tabular Data** workshop](https://sites.google.com/view/eurips25-ai-td/home) at EurIPS 2025 in Copenhagen."
+  extra_text: "December 2025."
+  date: 2025-12-06
+- text: "I was at Dagstuhl seminar on [Challenges and Opportunities of Table Representation Learning](https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/25182), and I **gave a talk** on *Context Matters in TRL* ([pdf](https://ir.cwi.nl/pub/36202/36202.pdf))."
   extra_text: "April 2025."
   date: 2025-04-27
-- text: "I gave my first keynote talk on *Efficient Use of LLMs for Data Preparation*, at [ELLIS workshop on Representation Learning and Generative Models for Structured Data](https://sites.google.com/view/rl-and-gm-for-sd)"
+- text: "I gave my **first keynote talk** on *Efficient Use of LLMs for Data Preparation*, at [ELLIS workshop on Representation Learning and Generative Models for Structured Data](https://sites.google.com/view/rl-and-gm-for-sd)"
   extra_text: "Feb 2025."
   date: 2025-02-27
 - text: "I was at CIDR'25, Amsterdam as a volunteer"
@@ -23,16 +38,16 @@ news_items:
 - text: "I was at VLDB'24, Guangzhou China. Here is my [trip report](blog/blog_vldb)"
   extra_text: "August 2024."
   date: 2024-08-05
-- text: "Our paper titled *'How different is different? Systematically identifying distribution shifts and their impacts in NER datasets'* got accepted to [Language Resources and Evaluation (LREC)](https://link.springer.com/article/10.1007/s10579-024-09754-8)!"
+- text: "Our paper titled *'How different is different? Systematically identifying distribution shifts and their impacts in NER datasets'* got **accepted** to [Language Resources and Evaluation (LREC)](https://link.springer.com/article/10.1007/s10579-024-09754-8)!"
   extra_text: "July 2024."
   date: 2024-07-18
-- text: "Our paper titled *'Towards Efficient Data Wrangling with LLMs using Code Generation'* got accepted to [DEEM@SIGMOD'24](https://deem-workshop.github.io/)! I will be in Chile to present our work."
+- text: "Our paper titled *'Towards Efficient Data Wrangling with LLMs using Code Generation'* got **accepted** to [DEEM@SIGMOD'24](https://deem-workshop.github.io/)! I will be in Chile to present our work."
   extra_text: "May 2024."
   date: 2024-05-17
-- text: "Our paper titled *'Do Instruction-tuned Large Language Models Help with Relation Extraction?'* got accepted to [ISWC LM-KBC workshop](https://lm-kbc.github.io/workshop2023/)!"
+- text: "Our paper titled *'Do Instruction-tuned Large Language Models Help with Relation Extraction?'* got **accepted** to [ISWC LM-KBC workshop](https://lm-kbc.github.io/workshop2023/)!"
   extra_text: "August 2023."
   date: 2023-08-31
-- text: "Our team scored 2nd on the [LM-KBC challenge](https://lm-kbc.github.io/challenge2023/) on Track 2!"
+- text: "Our team scored **2nd** on the [LM-KBC challenge](https://lm-kbc.github.io/challenge2023/) on Track 2!"
   extra_text: "August 2023."
   date: 2023-08-25
 - text: "I joined the [*Knowledge Prompting Hackathon*](https://king-s-knowledge-graph-lab.github.io/knowledge-prompting-hackathon/) at KCL, London."

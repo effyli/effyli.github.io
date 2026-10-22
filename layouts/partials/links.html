@@ -1,0 +1,8 @@
+{{/* Renders a map of label -> url as [label] links; relative urls point into /static. */}}
+{{ with . }}
+<span class="links">
+  {{ range $name, $url := . }}
+    <a href="{{ if hasPrefix $url "http" }}{{ $url }}{{ else }}{{ $url | relURL }}{{ end }}">[{{ $name }}]</a>
+  {{ end }}
+</span>
+{{ end }}

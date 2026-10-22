@@ -1,0 +1,15 @@
+{{ define "main" }}
+<h1 class="title">{{ .Title }}</h1>
+{{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+<ul class="rows posts">
+  {{ range .Pages.ByDate.Reverse }}
+  <li>
+    <span class="when">{{ .Date.Format "2006-01-02" }}</span>
+    <span class="what">
+      <a href="{{ .RelPermalink }}"><strong>{{ .Title }}</strong></a>
+      {{ with .Params.tags }}<span class="tags">{{ range . }}<a href="{{ (print "/tags/" (urlize .) "/") | relURL }}">#{{ . }}</a>{{ end }}</span>{{ end }}
+    </span>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}

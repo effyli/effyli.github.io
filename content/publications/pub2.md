@@ -2,7 +2,11 @@
 title: "Knowledge-centric Prompt Composition for Knowledge Base Construction from Pre-trained Language Models"
 authors:
 - Xue Li
-- Author Name
+- Anthony Hughes
+- Majlinda Llugiqi
+- Fina Polat
+- Paul Groth
+- Fajar J. Ekaputra
 date: "2023-09-19"
 
 publication: "ISWC 2023 LM-KBC workshop"

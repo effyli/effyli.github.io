@@ -1,0 +1,4 @@
+<li>
+  <span class="stamp">{{ .item.date | time.Format "Jan 2006" }}</span>
+  <span class="what">{{ if .latest }}<span class="new">new</span> {{ end }}{{ .item.text | markdownify }}</span>
+</li>

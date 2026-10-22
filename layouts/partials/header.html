@@ -1,0 +1,9 @@
+<header class="nav container">
+  <nav class="menu">
+    {{ $current := . }}
+    {{ range site.Menus.main }}
+      {{ $active := or (and (eq .URL "/") $current.IsHome) (and (ne .URL "/") (hasPrefix $current.RelPermalink .URL)) }}
+      <a href="{{ .URL | relURL }}"{{ if $active }} class="active"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+  </nav>
+</header>

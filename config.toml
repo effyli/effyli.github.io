@@ -1,26 +1,54 @@
 baseURL = "https://effyli.github.io"
 
-# set your your own ga token here.
-googleAnalytics = "UA-51640218-1"
-
 languageCode = "en-us"
-
-# for using avicenna you need to set the themes to 'avicenna'
 enableEmoji = true
-theme = "avicenna"
 
 # This is your page title, it appears in your tab
 title = "Effy Xue Li"
 
-# number of posts to show on the blog page
-paginate = 10
-
 [markup]
+[markup.goldmark.extensions.extras.mark]
+enable = true
 [markup.tableOfContents]
 endLevel = 3
 ordered = false
 startLevel = 1
 
 [params]
-# it is used for the copy-right section of your page
+# used for the copyright line in the footer
 name = "Effy Xue Li"
+description = "Effy Xue Li — Postdoctoral Researcher at CWI Amsterdam, working on LLMs for data management."
+email = "effy DOT li AT cwi DOT nl"
+cv = "cv.pdf"
+
+# shown as buttons under the name on the home page, in this order (after cv)
+[[params.socials]]
+name = "twitter"
+url = "https://twitter.com/effyli4"
+[[params.socials]]
+name = "github"
+url = "https://github.com/effyli"
+[[params.socials]]
+name = "linkedin"
+url = "https://www.linkedin.com/in/effy-li"
+[[params.socials]]
+name = "google scholar"
+url = "https://scholar.google.com/citations?hl=en&user=5OKcoiEAAAAJ"
+
+[menu]
+[[menu.main]]
+name = "about"
+url = "/"
+weight = 1
+[[menu.main]]
+name = "projects"
+url = "/projects/"
+weight = 2
+[[menu.main]]
+name = "blog"
+url = "/blog/"
+weight = 3
+[[menu.main]]
+name = "cv"
+url = "/cv.pdf"
+weight = 4

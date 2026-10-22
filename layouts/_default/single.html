@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="post">
+  <p class="kicker"><a href="{{ .Parent.RelPermalink }}">← {{ .Parent.Title | lower }}</a></p>
+  <h1 class="title">{{ .Title }}</h1>
+  <p class="post-meta">
+    {{ .Date.Format "2 January 2006" }} · {{ .ReadingTime }} min read
+    {{ with .Params.tags }}<span class="tags">{{ range . }}<a href="{{ (print "/tags/" (urlize .) "/") | relURL }}">#{{ . }}</a>{{ end }}</span>{{ end }}
+  </p>
+  <div class="prose">{{ .Content }}</div>
+</article>
+{{ end }}
