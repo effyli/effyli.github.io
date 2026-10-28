@@ -11,7 +11,7 @@ build:
 show_news_icons: true
 default_news_icon: "file-text"
 
-num_news: 3
+num_news: 4
 
 news_items:
 - text: "I gave a talk on *The Silent Failures in Agentic Data Science* at the [SODA team](https://team.inria.fr/soda/), Inria Saclay."
@@ -23,6 +23,9 @@ news_items:
 - text: "New **preprint**: [*Beyond Scale and Generation: Understanding Language Model-based Entity Matching*](https://arxiv.org/abs/2607.24688)."
   extra_text: "July 2026."
   date: 2026-07-27
+- text: "CWI published a [portrait of me](https://www.cwi.nl/en/stories/portrait-of-effy-li-postdoc-in-the-database-architectures-group/): from electronic engineering in China to data management research, and why I hope to inspire more women in STEM."
+  extra_text: "April 2026."
+  date: 2026-04-22
 - text: "I co-organized the [**AI for Tabular Data** workshop](https://sites.google.com/view/eurips25-ai-td/home) at EurIPS 2025 in Copenhagen."
   extra_text: "December 2025."
   date: 2025-12-06
