@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    circle { fill: #6a0c06; }
+    path { fill: #ffffff; }
+    @media (prefers-color-scheme: dark) {
+      circle { fill: #d65a45; }
+      path { fill: #1a1512; }
+    }
+  </style>
+  <circle cx="32" cy="32" r="32"/>
+  <!-- "E" and "L" drawn as blocks so they render the same everywhere -->
+  <path d="M16.5 20h14v5h-9v4.5h7.5v5h-7.5V39h9v5h-14z
+           M34.5 20h5v19h8v5h-13z"/>
+</svg>
